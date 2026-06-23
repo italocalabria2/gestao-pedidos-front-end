@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.formulario {
+    background-color: #ffffff;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito de clique no input */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%; /* Opcional: faz o botão ocupar a largura do formulário */
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Card de Pedido Repaginado */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e6;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Customização dos Status (com visual estilo "tag/badge") */
+.criado, .confirmado, .entregue, .cancelado {
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    width: fit-content;
+}
+
+.criado {
+    color: #6c757d;
+    background-color: #f1f3f5;
+}
+
+.confirmado {
+    color: #0056b3;
+    background-color: #e7f5ff;
+}
+
+.entregue {
+    color: #2b8a3e;
+    background-color: #ebfbee;
+}
+
+.cancelado {
+    color: #c92a2a;
+    background-color: #fff5f5;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gestão de Pedidos</h1>
+
+    <div class="formulario">
+        <h2>Novo Pedido</h2>
+
+        <input type="text" id="cliente" placeholder="Cliente">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="produto" placeholder="Produto">
+        <input type="number" id="quantidade" placeholder="Quantidade">
+        <input type="number" id="valorUnitario" placeholder="Valor Unitário">
+
+        <button onclick="criarPedido()">
+            Criar Pedido
+        </button>
+    </div>
+
+    <hr>
+
+    <button onclick="listarPedidos()">
+        Atualizar Lista
+    </button>
+
+    <div id="pedidos"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
